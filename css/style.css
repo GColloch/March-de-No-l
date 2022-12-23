@@ -1,0 +1,477 @@
+    body {
+        background-color: #FAF8F5;
+    }
+    
+    .img-h1 {
+        background: url('../img/bandeaux-H1.png') no-repeat center;
+        color: white;
+    }
+    /* titre */
+    
+    h1,
+    h2,
+    h4 {
+        font-family: 'kefa';
+    }
+    
+    h1 {
+        font-size: 87px;
+    }
+    
+    h2 {
+        color: white;
+    }
+    
+    h4 {
+        color: white;
+        font-size: 70px;
+        margin-top: 100px;
+        /* ajouter */
+    }
+    
+    .col-4 p {
+        width: 400px;
+        margin-top: 40px;
+    }
+    
+    .col-4 h3 {
+        width: 300px;
+        color: #707070 !important;
+    }
+    
+    h3 {
+        color: #707070;
+    }
+    /* Fin titre */
+    
+    li {
+        font-size: 45px;
+    }
+    
+    div a {
+        text-decoration: none !important;
+        color: #ffffff;
+    }
+    
+    .card a {
+        color: #ffffff !important;
+    }
+    
+    a {
+        text-decoration: none !important;
+        color: #707070 !important;
+    }
+    /* modif */
+    
+    button {
+        font-size: 38px !important;
+        box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -webkit-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -moz-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        border: transparent;
+        background-color: white;
+    }
+    /* ul {
+    background-image: url('/img/menu.png');
+} */
+    
+    .localisation {
+        background: url('../img/rond-localisation.png') no-repeat center;
+        background-position: bottom right;
+        border-radius: 71px;
+        padding: 30px;
+        box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -webkit-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -moz-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+    }
+    
+    .accueil-lutin {
+        height: 990px;
+        background: url("../img/lutin.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: right, left;
+        margin-top: -15%;
+    }
+    
+    .accueil-lutin:hover {
+        height: 990px;
+        background: url("../img/lutin-coucou.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: right, left;
+    }
+    
+    .block-loca {
+        margin-top: 200px;
+    }
+    /* page 2 */
+    
+    .video {
+        border-radius: 10%;
+    }
+    
+    .titre {
+        background: url('../img/Bandeaux-petit-2.png') no-repeat center;
+    }
+    
+    .container {
+        position: relative;
+    }
+    
+    .article {
+        width: 100%;
+        padding-right: 70px;
+    }
+    
+    .container .card {
+        background-color: white;
+        position: relative;
+        width: 400px;
+        height: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    
+    .container .card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #DD5C5C;
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+    
+    .container .card:hover:before {
+        clip-path: circle(300px at 80% -20%);
+    }
+    
+    .container .card:after {
+        content: 'Noel';
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.04);
+    }
+    
+    .container .card .img-box {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
+        width: 100%;
+        height: 200px;
+        transition: 0.5s;
+    }
+    
+    .container .card:hover .img-box {
+        top: 0%;
+        transform: translateY(0%);
+    }
+    
+    .container .card .img-box img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-25deg);
+        width: 300px;
+    }
+    
+    .container .card .content-box {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 10;
+    }
+    
+    .container .card:hover .content-box {
+        height: 210px;
+    }
+    
+    .container .card .content-box h3 {
+        position: relative;
+        margin-top: -27px;
+        color: #707070;
+    }
+    
+    .container .card .content-box .size,
+    .container .card .content-box .color {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    
+    .container .card .content-box .size h4,
+    .container .card .content-box .color h4 {
+        color: #fff;
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-right: 10px;
+        margin-top: -20px;
+    }
+    
+    .container .card .content-box .size span {
+        width: 26px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        font-size: 14px;
+        display: inline-block;
+        color: #111;
+        margin: 0 5px;
+        transition: 0.5s;
+        background: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .container .card .content-box .color span {
+        width: 20px;
+        height: 20px;
+        background: #ff0;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    
+    .container .card .content-box .color span:nth-child(2) {
+        background: #9bdc28;
+    }
+    
+    .container .card .content-box .color span:nth-child(3) {
+        background: #03a9f4;
+    }
+    
+    .container .card .content-box .color span:nth-child(5) {
+        background: #f4033f;
+    }
+    
+    .container .card .content-box .size span:hover {
+        background: rgb(170, 26, 26);
+    }
+    
+    .container .card .content-box a {
+        display: inline-block;
+        padding: 10px 20px;
+        background: white;
+        border-radius: 4px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #111;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s;
+    }
+    
+    .container .card:hover .content-box a {
+        opacity: 1;
+        transform: translateY(10px);
+        transition-delay: 0.75s;
+        cursor: pointer;
+    }
+    
+    .shadow {
+        box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -webkit-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -moz-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+    }
+    
+    .commander {
+        height: 768px;
+        border-radius: 71px;
+        padding: 30px;
+        box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -webkit-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -moz-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+    }
+    
+    .box-shadow {
+        border-radius: 71px;
+        padding: 30px;
+        box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -webkit-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+        -moz-box-shadow: -12px 23px 13px -1px rgba(92, 99, 138, 0.09);
+    }
+    
+    .back-img {
+        background: url(../img/rond-panier.png) no-repeat;
+    }
+    
+    h5 {
+        color: white;
+        font-size: 60px;
+    }
+    
+    .wrapper {
+        position: relative;
+        width: 399px;
+        height: 490px;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    .input {
+        appearance: none;
+        z-index: 100;
+        margin-right: 1rem;
+        width: 1rem;
+        height: 1rem;
+        background: #ebebeb;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .input:last-of-type {
+        margin: 0;
+    }
+    
+    .input:focus {
+        outline: none;
+    }
+    
+    .input:checked {
+        background: black;
+    }
+    
+    .input+* {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(100%);
+        transition: transform ease-in-out 400ms;
+        border-radius: 5px;
+        overflow: hidden;
+        background: AliceBlue;
+    }
+    
+    section {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .input:checked+* {
+        transform: translateX(0);
+        z-index: 1;
+    }
+    /* 
+        just to be safe we hide every element that comes after
+        each slide and that's not an input of type radio
+    */
+    
+    .input+*+*:not(input[type=radio]) {
+        display: none;
+    }
+    /* ARROWS */
+    
+    .input:before {
+        display: none !important;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        width: 2rem;
+        height: 2rem;
+        background: orange;
+        border-radius: 50%;
+    }
+    
+    .input:after {
+        display: none !important;
+        content: '';
+        position: absolute;
+        top: calc(50% + 1rem);
+        left: 2rem;
+        width: .5rem;
+        height: .5rem;
+        border-bottom: 1px solid #262626;
+        border-left: 1px solid #262626;
+        transform: translate(-25%, -50%) rotate(45deg);
+    }
+    
+    .input:checked:before,
+    .input:checked:after {
+        display: none;
+    }
+    
+    .input:checked+*+input:before {
+        left: calc(100% - 3rem);
+    }
+    
+    .input:checked+*+input:after {
+        left: calc(100% - 2rem);
+        transform: translate(-75%, -50%) rotate(-135deg);
+    }
+    
+    .input:checked+*+input+*~input:before,
+    .input:checked+*+input+*~input:after {
+        display: none;
+    }
+    
+    iframe {
+        border-radius: 40px;
+    }
+    
+    .white {
+        background-color: white !important;
+    }
+    
+    .white-formulaire {
+        margin-top: 80px;
+        background-color: white;
+        width: 60%;
+        height: 850px;
+        border-radius: 70px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .formulaire input,
+    .formulaire textarea {
+        border-radius: 100px;
+        width: 70%;
+        margin: 15px;
+        padding: 15px;
+        border: transparent;
+        margin-top: 60px;
+    }
+    
+    .formulaire button {
+        border-radius: 40px;
+        padding: 10px;
+    }
+    
+    .Saucisson {
+        margin-left: 950px;
+        margin-top: -500px;
+        border-radius: 30px;
+        width: 20%;
+    }
+    
+    .fondPanier {
+        position: absolute;
+        margin-left: 419px;
+    }
+    
+    .article-panier {
+        width: 70%;
+        border-radius: 50px;
+    }
